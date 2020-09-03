@@ -72,9 +72,10 @@
 - name: Sen Wang
   photo: Sen.jpg
   info: M.Sc. student
-  email: sen.wang@gatech.edu
-  number_educ: 0
-  education1:
+  email: swang736@gatech.edu
+  number_educ: 2
+  education1: B.S. in Automation, Northeastern University (China), 2018
+  education2: M.S. in ECE, Georgia Institute of Technology, 2020
       
 - name: Alejandro Escontrela
   photo: Alejandro.jpg
