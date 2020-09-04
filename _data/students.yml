@@ -8,9 +8,5 @@
 #  education3:
 #  education4:
 
-- name: Sen Wang
-  photo: Sen.jpg
-  info: Master student
-  email: sen.wang@gatech.edu
-  number_educ: 0
-  education1:
+  # Current students add yourself to team_members.yml instead
+  
