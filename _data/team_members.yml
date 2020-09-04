@@ -69,6 +69,13 @@
   number_educ: 1
   education1: B.E. in BME, Southern University of Science and Technology (SUSTech), 2017
   
+- name: Yoonwoo Kim
+  photo: Yoonwoo.jpg
+  info: M.Sc. student
+  email: ykim742@gatech.edu
+  number_educ: 1
+  education1: B.S. Computer Science, Georgia Institute of Technology, 2020
+
 - name: Sen Wang
   photo: Sen.jpg
   info: M.Sc. student
