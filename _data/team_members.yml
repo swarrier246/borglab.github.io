@@ -69,13 +69,26 @@
   number_educ: 1
   education1: B.E. in BME, Southern University of Science and Technology (SUSTech), 2017
   
+- name: Yoonwoo Kim
+  photo: Yoonwoo.jpg
+  info: M.Sc. student
+  email: ykim742@gatech.edu
+  number_educ: 1
+  education1: B.S. Computer Science, Georgia Institute of Technology, 2020
+
 - name: Sen Wang
   photo: Sen.jpg
   info: M.Sc. student
-  email: swang736@gatech.edu
-  number_educ: 2
+  email: sen.wang@gatech.edu
+  number_educ: 1
   education1: B.S. in Automation, Northeastern University (China), 2018
-  education2: M.S. in ECE, Georgia Institute of Technology, 2020
+  
+- name: Sushmita Warrier
+  photo: Sushmita.jpg
+  info: M.Sc. Student, ECE
+  email: swarrier6@gatech.edu
+  number_educ: 1
+  education1: BTech ECE, Charusat University, 2016
       
 - name: Alejandro Escontrela
   photo: Alejandro.jpg
