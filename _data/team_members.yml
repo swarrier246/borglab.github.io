@@ -98,6 +98,15 @@
   email: swarrier6@gatech.edu
   number_educ: 1
   education1: BTech ECE, Charusat University, 2016
+
+- name: Jing Wu
+  photo: JingW.jpg
+  info: M.S. student, Computer Science, started Aug 2019
+  email: wujing2951@gmail.com
+  url: https://jingwuouo.github.io/
+  number_educ: 2
+  education1: B.S. in Physics, Fudan University, 2017
+  education1: M.S. in CS, Georgia Institute of Technology, in progress
       
 - name: Alejandro Escontrela
   photo: Alejandro.jpg
