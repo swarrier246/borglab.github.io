@@ -27,7 +27,8 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
+# Plugins
+plugins: ['jekyll-twitter-plugin']
 
 # Markdown Processing
 kramdown:
