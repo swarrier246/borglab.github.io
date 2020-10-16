@@ -11,7 +11,8 @@ email: frank@dellaert.com
 description: > # this means to ignore newlines until "baseurl:"
   The Borglab is a robotics and computer vision lab at Georgia Tech.
 baseurl: ""
-url: "https://swarrier246.github.io/borglab.github.io/"
+# Remove all content in url when pushing to borglab.github.io/. Replace with "". The current url is placed to preserve formatting in published website. (css and js otherwise have relative paths that lose formatting when site is published)
+url: ""
 
 include:
   - .htaccess
