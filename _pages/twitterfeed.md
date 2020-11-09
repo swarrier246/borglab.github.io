@@ -8,5 +8,3 @@ permalink:
 
 # Timeline
 
-<!-- {% twitter https://twitter.com/gtsam4 maxwidth=1500 limit=5 %} -->
-{% twitter https://twitter.com/gtsam4 limit=5 %}
