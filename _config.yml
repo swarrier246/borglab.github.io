@@ -12,6 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   The Borglab is a robotics and computer vision lab at Georgia Tech.
 baseurl: ""
 url: ""
+twitter_username: gtsam4
 
 include:
   - .htaccess
@@ -27,7 +28,10 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
+# Plugins
+plugins:   
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Markdown Processing
 kramdown:
