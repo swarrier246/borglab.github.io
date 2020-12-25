@@ -49,5 +49,13 @@ Below is a list of publication highlights that we will expand over time:
 </div>
 {% endif %}
 
+{% for publi in site.data.publist %}
+
+<pubtit>{{ publi.title }}</pubtit>
+<p><em>{{ publi.authors }}</em></p>
+<p><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></p>
+
+{% endfor %}
+
 <p> &nbsp; </p>
 
