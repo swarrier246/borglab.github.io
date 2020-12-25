@@ -11,7 +11,7 @@ email: frank@dellaert.com
 description: > # this means to ignore newlines until "baseurl:"
   The Borglab is a robotics and computer vision lab at Georgia Tech.
 baseurl: ""
-url: ""
+url: "https://swarrier246.github.io/borglab.github.io"
 twitter_username: gtsam4
 
 include:
