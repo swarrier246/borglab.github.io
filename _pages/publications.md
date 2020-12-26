@@ -42,14 +42,7 @@ Below is a list of publication highlights that we will expand over time:
 {% endif %}
 
 {% endif %}
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-{% for publi in site.data.publist %}
+ 
 
 <pubtit>{{ publi.title }}</pubtit>
 <p><em>{{ publi.authors }}</em></p>
