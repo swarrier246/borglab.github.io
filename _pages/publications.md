@@ -45,9 +45,10 @@ Below is a list of publication highlights that we will expand over time:
  
 
 <pubtit>{{ publi.title }}</pubtit>
-<p><em>{{ publi.authors }}</em></p>
-<p><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></p>
-
+<p style="line-height:12px;"><em>{{ publi.authors }}</em></p>
+<p style="line-height:10px;">{{publi.conference}}</p>
+<p style="line-height:10px;"><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></p>
+<p> &nbsp; </p>
 {% endfor %}
 
 <p> &nbsp; </p>
