@@ -1,21 +1,45 @@
 - title: "Shonan Rotation Averaging"
-  image: Shonan.png
+  image: dummy.png
   description: A fast, provably optimal rotation averaging method.
   conference: European Conference on Computer Vision, 2020
+  project: Shonan Rotation Averaging
   authors: F Dellaert, D Rosen, J Wu, R Mahony, L Carlone
   link:
     url: https://dellaert.github.io/ShonanAveraging/
     display:  project webpage
-  highlight: 0
+  highlight: 1
   news2:
 
 - title: "Factor graphs for robot perception"
-  image: Shonan.png
+  image: dummy.png
   description: Introduction to factor graphs for perception.
+  project: Smoothing and Mapping
   conference: Foundations and Trends in Robotics, 2017
   authors: F Dellaert, M Kaess
   link:
     url: 
     display: 
-  highlight: 0
+  highlight: 1
+  news2:
+
+- title: "Factor graphs for robot perception"
+  image: dummy.png
+  description: Introduction to factor graphs for perception.
+  conference: Foundations and Trends in Robotics, 2017
+  authors: F Dellaert, M Kaess
+  link:
+    url: https://dellaert.github.io/ShonanAveraging/
+    display: Shonan
+  highlight: 1
+  news2:
+
+- title: "Factor graphs for robot perception"
+  image: dummy.png
+  description: Introduction to factor graphs for perception.
+  conference: Foundations and Trends in Robotics, 2017
+  authors: F Dellaert, M Kaess
+  link:
+    url:  https://dellaert.github.io/ShonanAveraging/ 
+    display: Shonan
+  highlight: 1
   news2:

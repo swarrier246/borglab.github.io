@@ -25,15 +25,20 @@ Below is a list of publication highlights that we will expand over time:
 
 <div class="col-sm-6 clearfix">
  <div class="well">
-  <pubtit>{{ publi.title }}</pubtit>
+  <details>
+  <summary><pubtit>{{ publi.title }}</pubtit></summary>
+
   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="33%" style="float: left" />
   <p>{{ publi.description }}</p>
-  <p><em>{{ publi.authors }}</em></p>
+  <p>{{ publi.authors }}</p>
+  <p><em>{{ publi.conference }}</em></p>
   <p><strong><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></strong></p>
   <p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
   <p> {{ publi.news2 }}</p>
+  </details>
  </div>
 </div>
+
 
 {% assign number_printed = number_printed | plus: 1 %}
 
@@ -42,13 +47,19 @@ Below is a list of publication highlights that we will expand over time:
 {% endif %}
 
 {% endif %}
- 
 
+{% assign even_odd = number_printed | modulo: 2 %} {% if even_odd == 1 %}
+{% endif %} 
+
+
+{% if publi.highlight == 0 %}
 <pubtit>{{ publi.title }}</pubtit>
 <p style="line-height:12px;"><em>{{ publi.authors }}</em></p>
 <p style="line-height:10px;">{{publi.conference}}</p>
 <p style="line-height:10px;"><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></p>
 <p> &nbsp; </p>
+{% endif %}
+
 {% endfor %}
 
 <p> &nbsp; </p>
