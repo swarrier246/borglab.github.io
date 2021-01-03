@@ -19,26 +19,20 @@ Below is a list of publication highlights that we will expand over time:
 
 
 <div class="col-sm-12 clearfix">
+  <div class="well">
   <details>
   <summary><pubtit>{{ publi.title }}</pubtit></summary>
 
   <p>{{ publi.description }}</p>
-  <p>{{ publi.authors }}</p>
-  <p><em>{{ publi.conference }}</em></p>
-  <p><strong><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></strong></p>
+  <p>{{ publi.authors }} , <em>{{ publi.conference }}</em></p>
+  
+  <p ><strong><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></strong></p>
   <p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
   <p> {{ publi.news2 }}</p>
   </details>
+  </div>
 </div>
 
-{% endif %}
-
-{% if publi.highlight == 0 %}
-<pubtit>{{ publi.title }}</pubtit>
-<p style="line-height:12px;"><em>{{ publi.authors }}</em></p>
-<p style="line-height:10px;">{{publi.conference}}</p>
-<p style="line-height:10px;"><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></p>
-<p> &nbsp; </p>
 {% endif %}
 
 {% endfor %}

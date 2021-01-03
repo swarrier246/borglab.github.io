@@ -22,24 +22,24 @@
   highlight: 1
   news2:
 
-- title: "Factor graphs for robot perception"
+- title: "Continuous-time Gaussian process motion planning via probabilistic inference"
   image: dummy.png
-  description: Introduction to factor graphs for perception.
-  conference: Foundations and Trends in Robotics, 2017
-  authors: F Dellaert, M Kaess
+  description: No description available.
+  conference: International Journal of Robotics Research, 2018
+  authors: Mustafa Mukadam, Jing Dong, Xinyan Yan, Frank Dellaert, and Byron Boots
   link:
     url: https://dellaert.github.io/ShonanAveraging/
-    display: Shonan
+    display: Shonan placeholder
   highlight: 1
   news2:
 
-- title: "Factor graphs for robot perception"
+- title: "Taking a Deeper Look at the Inverse Compositional Algorithm"
   image: dummy.png
-  description: Introduction to factor graphs for perception.
-  conference: Foundations and Trends in Robotics, 2017
-  authors: F Dellaert, M Kaess
+  description: No description available.
+  conference:  IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR), 2019
+  authors: Zhaoyang Lv, Frank Dellaert, James M. Rehg, and Andreas Geiger
   link:
     url:  https://dellaert.github.io/ShonanAveraging/ 
-    display: Shonan
+    display: Shonan placeholder
   highlight: 1
   news2:
