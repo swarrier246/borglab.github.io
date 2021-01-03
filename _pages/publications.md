@@ -18,7 +18,7 @@ Below is a list of publication highlights that we will expand over time:
 {% if publi.highlight == 1 %}
 
 
-<div class="col-sm-12 clearfix">
+<div>
   <div class="well">
   <details>
   <summary><pubtit>{{ publi.title }}</pubtit></summary>
