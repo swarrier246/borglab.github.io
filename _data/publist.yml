@@ -2,24 +2,20 @@
   image: dummy.png
   description: A fast, provably optimal rotation averaging method.
   conference: European Conference on Computer Vision, 2020
-  project: Shonan Rotation Averaging
   authors: F Dellaert, D Rosen, J Wu, R Mahony, L Carlone
   link:
     url: https://dellaert.github.io/ShonanAveraging/
     display:  project webpage
-  highlight: 1
   news2:
 
 - title: "Factor graphs for robot perception"
   image: dummy.png
   description: Introduction to factor graphs for perception.
-  project: Smoothing and Mapping
   conference: Foundations and Trends in Robotics, 2017
   authors: F Dellaert, M Kaess
   link:
     url: 
     display: 
-  highlight: 1
   news2:
 
 - title: "Continuous-time Gaussian process motion planning via probabilistic inference"
@@ -28,9 +24,8 @@
   conference: International Journal of Robotics Research, 2018
   authors: Mustafa Mukadam, Jing Dong, Xinyan Yan, Frank Dellaert, and Byron Boots
   link:
-    url: https://dellaert.github.io/ShonanAveraging/
-    display: Shonan placeholder
-  highlight: 1
+    url: https://www.cc.gatech.edu/~dellaert/pubs/Mukadam18ijrr.pdf
+    display: PDF   
   news2:
 
 - title: "Taking a Deeper Look at the Inverse Compositional Algorithm"
@@ -39,7 +34,6 @@
   conference:  IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR), 2019
   authors: Zhaoyang Lv, Frank Dellaert, James M. Rehg, and Andreas Geiger
   link:
-    url:  https://dellaert.github.io/ShonanAveraging/ 
-    display: Shonan placeholder
-  highlight: 1
+    url:  https://www.cc.gatech.edu/~dellaert/pubs/Lv19cvpr.pdf
+    display: PDF   
   news2:

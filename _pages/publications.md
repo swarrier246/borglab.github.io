@@ -15,9 +15,6 @@ Below is a list of publication highlights that we will expand over time:
 
 {% for publi in site.data.publist %}
 
-{% if publi.highlight == 1 %}
-
-
 <div>
   <div class="well">
   <details>
@@ -33,7 +30,6 @@ Below is a list of publication highlights that we will expand over time:
   </div>
 </div>
 
-{% endif %}
 
 {% endfor %}
 
