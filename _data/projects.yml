@@ -1,10 +1,21 @@
 - title: "Shonan Rotation Averaging"
-  image: Shonan.png
-  description: A fast, provably optimal rotation averaging method.
-  authors: F Dellaert, D Rosen, J Wu, R Mahony, L Carlone
+  image: dummy.png
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  people: 
+    - name: F Dellaert
+      url: https://dellaert.github.io/
+    - name: D Rosen
+      url:
+    - name: J Wu
+      url:
+    - name: R Mahony
+      url:
+    - name: L Carlone
+      url: 
+  people_images: dummy.png, dummy.png
   link:
     url: https://dellaert.github.io/ShonanAveraging/
     display:  project webpage
   highlight: 1
   news2:
-
+  
