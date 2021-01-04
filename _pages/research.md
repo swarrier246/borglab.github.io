@@ -32,6 +32,10 @@ Our website is still under construction, and we will soon fill this with both cu
   <p><a href="{{ person.url }}">{{ person.name }}</a></p>
   {% endfor %}
   <p><strong><a href="{{ proj.link.url }}">{{ proj.link.display }}</a></strong></p>
+  <pubtit> Related Papers </pubtit>
+  {% for paper in proj.related_papers %}
+  <p><a href="{{ paper.url }}">{{ paper.title }}</a></p>
+  {% endfor %}
   <p class="text-danger"><strong> {{ proj.news1 }}</strong></p>
   <p> {{ proj.news2 }}</p>
   </details>
