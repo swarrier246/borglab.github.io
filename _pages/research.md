@@ -27,10 +27,29 @@ Our website is still under construction, and we will soon fill this with both cu
   <img src="{{ site.url }}{{ site.baseurl }}/images/projectpic/{{ proj.image }}" class="img-responsive" width="33%" style="float: left" />
   <p>{{ proj.description }}</p>
   <pubtit> People </pubtit>
-  {% for person in proj.people %}
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: none" />
-  <p><a href="{{ person.url }}">{{ person.name }}</a></p>
-  {% endfor %}
+  {% assign idx = 0 %}
+  <div class="container">
+   {% for person in proj.people %}
+
+   {% assign pos_idx = idx | modulo: 2 %}
+
+   {% if pos_idx == 1 %}
+   <div class="row justify-content-evenly">
+   {% endif %}
+
+   <div class="col-sm-3">
+   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: none" />
+   <p><a href="{{ person.url }}">{{ person.name }}</a></p>
+   </div>
+   
+   {% if pos_idx == 1 %}
+   </div>
+   {% endif %}
+
+   {% assign idx = idx | plus: 1 %}
+
+   {% endfor %}
+  </div>
   <p><strong><a href="{{ proj.link.url }}">{{ proj.link.display }}</a></strong></p>
   <pubtit> Related Papers </pubtit>
   {% for paper in proj.related_papers %}
