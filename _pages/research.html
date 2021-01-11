@@ -1,0 +1,112 @@
+---
+title: "Borglab - Research"
+layout: textlay
+excerpt: "Borglab -- Research"
+sitemap: false
+permalink: /research/
+---
+
+<h3>Research</h3>
+
+<p>
+    Our website is still under construction, and we will soon fill this with both current and legacy vignettes.
+</p>
+
+<div class="container-fluid">
+    {% assign number_printed = 0 %}
+
+    {% for proj in site.data.projects %}
+
+    {% assign even_odd = number_printed | modulo: 2 %}
+
+    {% if even_odd == 0 %}
+    <div class="row">
+        {% endif %}
+
+        <div class="col clearfix">
+            <div class="card">
+                <details>
+                    <summary class="pubtitle">
+                        {{ proj.title }}
+                    </summary>
+                    <div class="pubtitle"> Project Description </div>
+
+                    <div class="container">
+                        <img src="{{ site.url }}{{ site.baseurl }}/images/projectpic/{{ proj.image }}"
+                            class="card-img-top" style="width: 50%" />
+
+                        <div class="card-body">
+
+                            <p class="card-text">{{ proj.description }}</p>
+                            <div class="pubtitle">People</div>
+
+                            <!--Container for all project members-->
+
+                            {% assign idx = 0 %}
+                            {% for person in proj.people %}
+
+                            {% assign pos_idx = idx | modulo: 2 %}
+
+                            {% if pos_idx == 0 %}
+                            <div class="row">
+                            {% endif %}
+
+                                <div class="col-sm-3 col-md-3">
+                                    <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ person.image }}"
+                                        class="img-fluid" />
+                                    <p><a href="{{ person.url }}">{{ person.name }}</a></p>
+                                </div>
+
+                            {% if pos_idx == 1 %}
+                            </div>
+                            {% else %}
+                                <div class="col-sm-3 col-md-3"></div>
+                            {% endif %}
+
+                            {% assign idx = idx | plus: 1 %}
+
+                            {% endfor %}
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>
+                            <strong>
+                                <a href="{{ proj.link.url }}">{{ proj.link.display }}</a>
+                            </strong>
+                        </p>
+
+                        <pubtitle> Related Papers </pubtitle>
+
+                        {% for paper in proj.related_papers %}
+                        <p><a href="{{ paper.url }}">{{ paper.title }}</a></p>
+                        {% endfor %}
+
+                        <p class="text-danger">
+                            <strong> {{ proj.news1 }}</strong>
+                        </p>
+
+                        <p> {{ proj.news2 }} </p>
+
+                    </div>
+
+                </details>
+            </div>
+
+        </div>
+
+
+        {% if even_odd == 1 %}
+    </div>
+    {% endif %}
+
+
+    {% assign number_printed = number_printed | plus: 1 %}
+    {% endfor %}
+
+
+
+</div>
+
+<p> &nbsp; </p>
