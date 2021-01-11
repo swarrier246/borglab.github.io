@@ -1,24 +1,22 @@
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-	<div class="navbar-header">
-	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	  </button>
-	
-    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">Borglab @ Georgia Tech</a>
-	</div>
-	<div class="collapse navbar-collapse" id="navbar-collapse-1">
-	  <ul class="nav navbar-nav navbar-right">
-		<li><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/team">Team</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/vacancies">Vacancies</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/publications">Publications</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/research">Research</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/pictures">(Pics)</a></li>
-	  </ul>
-	</div>
-  </div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="{{ site.url }}">Borglab @ Georgia Tech</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/team">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/vacancies">Vacancies</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/publications">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/research">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/pictures">Pics</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
