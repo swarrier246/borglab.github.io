@@ -11,7 +11,8 @@ permalink: /research/
 Our website is still under construction, and we will soon fill this with both current and legacy vignettes :-)
 
 {% assign number_printed = 0 %}
-{% for proj in site.data.projects %}
+
+{% for proj in site.data.airtable %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
 
@@ -24,7 +25,7 @@ Our website is still under construction, and we will soon fill this with both cu
   <details>
   <summary><pubtit>{{ proj.title }}</pubtit></summary>
   <pubtit> Project Description </pubtit>
-  <img src="{{ site.url }}{{ site.baseurl }}/images/projectpic/{{ proj.image }}" class="img-responsive" width="33%" style="float: left" />
+  [comment]: # (<img src="{{ site.url }}{{ site.baseurl }}/images/projectpic/{{ proj.image }}" class="img-responsive" width="33%" style="float: left" />)
   <p>{{ proj.description }}</p>
   <pubtit> People </pubtit>
   {% assign idx = 0 %}
@@ -50,13 +51,13 @@ Our website is still under construction, and we will soon fill this with both cu
 
    {% endfor %}
   </div>
-  <p><strong><a href="{{ proj.link.url }}">{{ proj.link.display }}</a></strong></p>
+  [comment]: # (<p><strong><a href="{{ proj.link.url }}">{{ proj.link.display }}</a></strong></p>
   <pubtit> Related Papers </pubtit>
   {% for paper in proj.related_papers %}
   <p><a href="{{ paper.url }}">{{ paper.title }}</a></p>
   {% endfor %}
   <p class="text-danger"><strong> {{ proj.news1 }}</strong></p>
-  <p> {{ proj.news2 }}</p>
+  <p> {{ proj.news2 }}</p>)
   </details>
  </div>
 </div>
@@ -68,7 +69,6 @@ Our website is still under construction, and we will soon fill this with both cu
 {% endif %}
 
 {% endfor %}
-
 {% assign even_odd = number_printed | modulo: 2 %}
 {% if even_odd == 1 %}
 </div>

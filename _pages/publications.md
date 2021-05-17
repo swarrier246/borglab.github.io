@@ -13,7 +13,7 @@ For a more complete list, you can look at [Frank Dellaert's publications](https:
 
 Below is a list of publication highlights that we will expand over time:
 
-{% for publi in site.data.publist %}
+{% for publi in site.data.airtable %}
 
 <div>
   <div class="well">
@@ -21,7 +21,9 @@ Below is a list of publication highlights that we will expand over time:
   <summary><pubtit>{{ publi.title }}</pubtit></summary>
 
   <p>{{ publi.description }}</p>
-  <p>{{ publi.authors }} , <em>{{ publi.conference }}</em></p>
+  <p>{% for person in publi.people %}
+  {{ publi.people[0]}}
+  {% endfor %} , <em>{{ publi.conference }}</em></p>
   
   <p ><strong><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></strong></p>
   <p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
