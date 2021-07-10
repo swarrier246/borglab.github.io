@@ -1,9 +1,9 @@
 ---
-title: "Borglab - Team"
+title: "Borglab - People"
 layout: gridlay
 excerpt: "Borglab: Team members"
 sitemap: false
-permalink: /team/
+permalink: /people/
 ---
 
 ## Group Members
