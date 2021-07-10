@@ -39,10 +39,13 @@ Our website is still under construction, and we will soon fill this with both cu
 <div class="col-sm-4">
 {% for people_name in site.data.people %}
 {%- if people_name.id == person -%}
-<!-- {% capture image_url %}{{ site.url }}{{ site.baseurl }}/images/teampic/{{ people_name.name.photo }}{% endcapture %} -->
-{% capture image_url %}{{ site.url }}{{ site.baseurl }}/images/dummy.png{% endcapture %}
+{% for member in site.data.team_members %}
+{%- if member.name == people_name.name -%}
+{% capture image_url %}{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}{% endcapture %}
 {% capture person_name %}{{people_name.name}}{% endcapture %}
-{%- include image.html src=image_url description=person_name -%}
+{%- include image.html url=image_url description=person_name -%}
+{%- endif -%}
+{% endfor %}
 {%- endif -%}
 {% endfor %}
 </div>
